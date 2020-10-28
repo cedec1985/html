@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+           <head>
+           <meta charset="UTF-8">
+                         <title>Title</title>
+                         <script src="https:/>/ajax.googleapis.com/ajax/lis/jquery/3.5.1/jquery.min.js"></script>
+<script>$(document).ready(function() {
+    $("myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+</script>
+<style>
+table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+}
+td,th{
+border: 1px solid  #dddddd;
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even)   {
+        background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2>Filterable table</h2>
+<p>type sometihng in the input field to search the table for first names, last names or emails:</p>
+<input id="myInput" type="text" placeholder="Search..">
+                                            <br><br>
+                                            <table>
+                                            <thead>
+                                            <tr><th>Firstname</th>
+                                            <th>Lastname></th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody id="myTable">
+          <tr>
+          <td>john</td>
+          <td>doe</td>
+          <td>john@example.com</td>
+</tr>
+<tr>
+<td>mary</td>
+<td>moe</td>
+<td>mary@mail.com</td>
+</tr>
+<tr>
+<td>july</td>
+<td>dooley</td>
+<td>july@greatstuff.com</td>
+</tr>
+<tr>
+<td>anja</td>
+<td>ravendale</td>
+<td>a_r@test.com</td>
+</tr>
+</tbody>
+</table>
+
+<p>note that we start the search in tbody, to prevent filtering the table headers</p>
+</body>
+</html>
