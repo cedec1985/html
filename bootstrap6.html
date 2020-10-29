@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="spinner-border text-muted"></div>
+<div class="spinner-border text-primary"></div>
+<div class="spinner-border text-success"></div>
+<div class="spinner-border text-info"></div>
+<div class="spinner-border text-warning"></div>
+<div class="spinner-border text-danger"></div>
+<div class="spinner-border text-secondary"></div>
+<div class="spinner-border text-dark"></div>
+<div class="spinner-border text-light"></div>
+<div class="spinner-grow text-muted"></div>
+<div class="spinner-grow text-primary"></div>
+<div class="spinner-grow text-success"></div>
+<div class="spinner-grow text-info"></div>
+<div class="spinner-grow text-warning"></div>
+<div class="spinner-grow text-danger"></div>
+<div class="spinner-grow text-secondary"></div>
+<div class="spinner-grow text-dark"></div>
+<div class="spinner-grow text-light"></div>
+<div class="container">
+    <h2>Pagination</h2>
+    <p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>
+    <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</div>
+<div class="container">
+    <h2>Breadcrumbs</h2>
+    <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Photos</a></li>
+        <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+        <li class="breadcrumb-item"><a href="#">Italy</a></li>
+        <li class="breadcrumb-item active">Rome</li>
+    </ul>
+</div>
+<div class="container">
+    <h2>List Group With Linked Items</h2>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">First item</a>
+        <a href="#" class="list-group-item list-group-item-action">Second item</a>
+        <a href="#" class="list-group-item list-group-item-action">Third item</a>
+    </div>
+</div>
+<div class="container">
+    <h2>List Group With Contextual Classes</h2>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Success item</li>
+        <li class="list-group-item list-group-item-secondary">Secondary item</li>
+        <li class="list-group-item list-group-item-info">Info item</li>
+        <li class="list-group-item list-group-item-warning">Warning item</li>
+        <li class="list-group-item list-group-item-danger">Danger item</li>
+        <li class="list-group-item list-group-item-primary">Primary item</li>
+        <li class="list-group-item list-group-item-dark">Dark item</li>
+        <li class="list-group-item list-group-item-light">Light item</li>
+    </ul>
+</div>
+<div class="container mt-3">
+    <h2>List Group With Badges</h2>
+    <p>Combine .badge classes with utility/helper classes to add badges inside the list group:</p>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Inbox
+            <span class="badge badge-primary badge-pill">12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Ads
+            <span class="badge badge-primary badge-pill">50</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Junk
+            <span class="badge badge-primary badge-pill">99</span>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <h2>Stretched Link in Card</h2>
+    <p>Add the .stretched-link class to a link inside the card, and it will make the whole card clickable (the card will act as a link):</p>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="C:\Users\cedri\OneDrive\Desktop\Nouveau dossier\OIP.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+        </div>
+    </div>
+    <div class="card" style="width:500px">
+        <img class="card-img-top" src="" alt="Card image">
+        <div class="card-img-overlay">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+    <div class="card-columns">
+        <div class="card bg-primary">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <h5 class="dropdown-header">Dropdown header</h5>
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+    </div>
+</div>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Sony
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Tablet</a>
+            <a class="dropdown-item" href="#">Smartphone</a>
+        </div>
+    </div>
+</div>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+    </div>
+</div>
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+    Lorem ipsum dolor text....
+</div>
+<div class="container">
+    <h2>Accordion Example</h2>
+    <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    Collapsible Group Item #1
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    Collapsible Group Item #2
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    Collapsible Group Item #3
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
